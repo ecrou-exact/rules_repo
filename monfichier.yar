@@ -10,7 +10,7 @@
 rule APT_PupyRAT_PY {
    meta:
       description = "Detects Pupy RAT"
-      license = "licenses test"
+      
       author = "Theo test"
       Version = "jwjsnASXAS"
       reference = "https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations"
