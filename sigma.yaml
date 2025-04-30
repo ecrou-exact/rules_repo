@@ -1,0 +1,22 @@
+//sigma
+title: "Suspicious PowerShell Execution"
+id: "12345-abcde-67890-fghij"
+status: "experimental"
+description: |
+  This rule detects suspicious PowerShell execution patterns often associated with malware or exploitation techniques.
+author: "Sigma Team"
+date: "2025-04-30"
+logsource:
+  category: "process_creation"
+  product: "windows"
+detection:
+  selection:
+    Image:
+      - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    CommandLine|contains:
+      - "Invoke-WebRequest"
+      - "DownloadString"
+  condition: selection
+falsepositives:
+  - "Legitimate system administration tasks"
+level: high
