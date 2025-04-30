@@ -1,4 +1,3 @@
-// yaml
 title: "Potential SQL Injection Attempt"
 id: "generic-001"
 status: "active"
