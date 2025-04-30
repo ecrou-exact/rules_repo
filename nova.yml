@@ -1,19 +1,22 @@
-title: "Suspicious Network Activity"
-id: "nva-98765"
-status: "active"
-description: "Detects suspicious network traffic patterns associated with data exfiltration attempts."
-author: "NOVA Team"
-date: "2025-04-30"
+title: Okta User Account Locked Out
+id: 14701da0-4b0f-4ee6-9c95-2ffb4e73bb9a
+status: test
+description: Detects when a user account is locked out.
+references:
+    - https://developer.okta.com/docs/reference/api/system-log/
+    - https://developer.okta.com/docs/reference/api/event-types/
+author: Austin Songer @austinsonger
+date: 2021-09-12
+modified: 2022-10-09
+tags:
+    - attack.impact
 logsource:
-  category: "network"
-  product: "suricata"
+    product: okta
+    service: okta
 detection:
-  selection:
-    dst_ip:
-      - "192.168.1.100"
-    dst_port: 443
-    flow: "to_server"
-  condition: selection
+    selection:
+        displaymessage: Max sign in attempts exceeded
+    condition: selection
 falsepositives:
-  - "Regular web traffic"
-level: high
+    - Unknown
+level: medium
