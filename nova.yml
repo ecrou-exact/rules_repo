@@ -1,0 +1,20 @@
+// nova
+title: "Suspicious Network Activity"
+id: "nva-98765"
+status: "active"
+description: "Detects suspicious network traffic patterns associated with data exfiltration attempts."
+author: "NOVA Team"
+date: "2025-04-30"
+logsource:
+  category: "network"
+  product: "suricata"
+detection:
+  selection:
+    dst_ip:
+      - "192.168.1.100"
+    dst_port: 443
+    flow: "to_server"
+  condition: selection
+falsepositives:
+  - "Regular web traffic"
+level: high
