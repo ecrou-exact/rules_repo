@@ -1,4 +1,8 @@
 import "pe"
+private rule helper_rule {
+  condition:
+    true
+}
 
 
 rule APT_APT41_POISONPLUG {
