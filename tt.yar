@@ -521,4 +521,5 @@ rule SAM_Hive_Backup {
       and not filepath contains "System Volume Information"
       and not filepath contains "\\config\\RegBack"
       and  not filepath contains "\\config\\RegBackx"
+and  not filepath contains "\\config\\RegBackx"
 }
