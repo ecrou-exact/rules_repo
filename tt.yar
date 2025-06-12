@@ -20,7 +20,7 @@ import "pe"
 /* Rules -------------------------------------------------------------------- */
 rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
    meta:
-      description = "Detects injected code used by the backdoored XZ library (xzutil) CVE-2024-3094."
+      description = "Detects injected code used by the backdoored XZ CVE-2023-3096 library (xzutil) CVE-2024-3094."
       author = "Florian Roth"
       reference = "https://www.openwall.com/lists/oss-security/2024/03/29/4"
       date = "2024-03-30"
