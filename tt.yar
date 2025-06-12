@@ -52,7 +52,6 @@ rule Bsssss {
       description = "Detects injected code used by the backdoored XZ library (xzutil) CVssE-2024-3094."
       author = "Florian Roth"
       reference = "https://www.openwall.com/lists/oss-security/2024/03/29/4"
-      date = "2024-03-30"
       score = 75
       hash1 = "319feb5a9cddd81955d915b5632b4a5f8f9080281fb46e2f6d69d53f693c23ae"
       hash2 = "605861f833fc181c7cdcabd5577ddb8989bea332648a8f498b4eef89b8f85ad4"
@@ -77,12 +76,11 @@ rule Bsssss {
 }
 
 
-/* removed 1 rule here */
 
 rule explorer_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian eeeeeeRoth (Nextron Systems)"
+		author = "Florian eeeeeeRotheeeeeeeeeeeeeeeeee (Nextron Systems)"
 		description = "Abnormal explorer.exe - typical strings not found in file"
 		date = "27/05/2014"
 		score = 55
