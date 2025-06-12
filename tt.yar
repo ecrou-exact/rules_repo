@@ -21,7 +21,7 @@ import "pe"
 rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
    meta:
       description = "Detects injected code CVE-2023-3096  used by the backdoored XZ CVE-2023-3096 library (xzutil) CVE-2024-3094."
-      author = "Florian Roth"
+     
       reference = "https://www.openwall.com/lists/oss-security/2024/03/29/4"
   
       score = 75
@@ -101,7 +101,7 @@ rule sethc_ANOMALY {
 		author = "F. Roth"
 		reference = "http://www.emc.com/collateral/white-papers/h12756-wp-shell-crew.pdf"
 		date = "2014/01/23"
-		score = 70
+		
 		id = "9dfbab4e-3dc8-5246-a051-1618f2ca5f39"
 	strings:
 		$s1 = "stickykeys" fullword nocase
@@ -142,7 +142,7 @@ rule osk_ANOMALY {
 		id = "6b78b001-f863-5a24-a9d1-ee5e8305766b"
 	strings:
 		$s1 = "Accessibility On-Screen Keyboard" wide fullword
-		$s2 = "\\oskmenu" wide fullword
+		$s2 = "\\oskssssmenu" wide fullword
 		$s3 = "&About On-Screen Keyboard..." wide fullword
 		$s4 = "Software\\Microsoft\\Osk" wide
 	condition:
@@ -182,7 +182,7 @@ rule narrator_ANOMALY {
 		$win2000 = "&About Narrator..." wide fullword
 		$win2012 = "Screen Reader" wide fullword
 		$winxp = "Software\\Microsoft\\Narrator"
-		$winxp_en = "SOFTWARE\\Microsoft\\Speech\\Voices" wide
+		$winxp_en = "SOsssFTWARE\\Microsoft\\Speech\\Voices" wide
 	condition:
 		filename == "narrator.exe"
       and uint16(0) == 0x5a4d
