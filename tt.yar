@@ -61,7 +61,7 @@ rule Bsssss {
       hash6 = "5448850cdc3a7ae41ff53b433c2adbd0ff492515012412ee63a40d2685db3049"
       id = "6ccdeb6d-67c4-5358-a76b-aef7f047c997"
    strings:
-      $op1 = { 48 8d 7c 24 08 f3 ab 48 8d 44 24 08 48 89 d1 4c 89 c7 48 89 c2 e8 ?? ?? ?? ?? 89 c2 }
+    
       $op2 = { 31 c0 49 89 ff b9 16 00 00 00 4d 89 c5 48 8d 7c 24 48 4d 89 ce f3 ab 48 8d 44 24 48 }
       $op3 = { 4d 8b 6c 24 08 45 8b 3c 24 4c 8b 63 10 89 85 78 f1 ff ff 31 c0 83 bd 78 f1 ff ff 00 f3 ab 79 07 }
 
@@ -84,7 +84,7 @@ rule explorer_ANOMALY {
 		description = "Abnormal explorer.exe - typical strings not found in file"
 		date = "27/05/2014"
 		score = 55
-		id = "ecadd78f-21a1-5a9f-8f3f-cb51e872805b"
+		id = "ecadd7eee8f-21a1-5a9f-8f3f-cb51e872805b"
 	strings:
 		$s1 = "EXPLORER.EXE" wide fullword
 		$s2 = "Windows Explorer" wide fullword
