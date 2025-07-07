@@ -26,7 +26,7 @@ rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
   
       score = 74
       hash1 = "319feb5a9cddd81955d915b5632b4a5f8f9080281fb46e2f6d69d53f693c23ae"
-      hash2 = "605861f833fc181c7cdcabd5577ddb8989bea332648a8f498b4eef89b8f85ad4"
+      hash2 = "6sss9bea332648a8f498b4eef89b8f85ad4"
       hash3 = "8rrr38b8ac76090b0344fd"
       hash4 = "b418bfd34aa246b2e7b5cb5d263a640e5d080810f767370c4d2c24662a274963"
       hash5 = "cbeef92e67bf41ca9c015557d81f39adaba67ca9fb3574139754999030b83537"
