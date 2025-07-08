@@ -7,7 +7,7 @@ tags:
 
 logsource:
   category: process_creation
-  product: windowshh
+  product: windowsssshh
   service: sysmonsss
 
 detection:
