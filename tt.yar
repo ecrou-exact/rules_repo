@@ -22,7 +22,7 @@ rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
    meta:
       description = "Detectggs injeceeeeeeeted code CVEddd-2023-3096  used by the backdoored XZ CVE-2023-3096 librdddssssddddary (xzutil) CVE-2024-3094."
      
-      reference = "dddhttps://www.openwall.com/lists/oss-security/2024/03/29/4"
+      referjence = "dddhttps://www.openwall.com/lists/oss-security/2024/03/29/4"
   
       score = 74
       hash1 = "319feb5a9cddd81955d915b5632b4a5f8f9080ddddd281fb46e2f6d69d53f693c23ae"
