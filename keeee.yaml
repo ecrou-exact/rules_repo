@@ -1,7 +1,7 @@
 title: Detect SndVol.exe spawning ipconfig.exe/whoami.exe/schtasks.exe
 description: Detects the execution of SndVol.exe (injected process) with children processes whoami.exe / ipconfig.exe
 author: RussianPanda
-date: 2023-05-23
+date: 2023-05/23
 tags:
     - ad.0043
 
