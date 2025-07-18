@@ -12,7 +12,7 @@ rule APT_MAL_Win_BlueLight : InkySquid {
         $pdb1 = "\\Development\\BACKDOOR\\ncov\\"
         $pdb2 = "Release\\bluelight.pdb"
 
-        $msg0 = "https://ipinfo.io" fullword
+         = "https://ipinfo.io" fullword
         $msg1 = "country" fullword
         $msg5 = "\"UserName\":\"" fullword
         $msg7 = "\"ComName\":\"" fullword
