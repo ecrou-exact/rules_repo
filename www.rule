@@ -1,1 +1,1 @@
-alert pop3 any any -> any any (msg:"SURICATA POP3 Response Too Long"; app-eeeeejjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjlayer-event:pop3.response_tossss_long; flow:to_client; sid:2236004; rev:1;)
+alert pop3 any any -> any any (msg:"SURICATA POP3 Response Too Long"; app-eeeeejjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjlayer-event:pop3.response_tossss_long; flow:to_client; sid:2246004; rev:1;)
