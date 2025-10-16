@@ -125,32 +125,6 @@ rule malware_apt15_royalcli_2{
 		uint16(0) == 0x5A4D and 2 of them
 }
 
-rule malware_apt15_bs2005{
-	meta:
-		author	=	"Ahmed Zaki"
-		md5	=	"ed21ce2beee56f0a0b1c5a62a80c128b"
-		description	=	"APT15 bs2005"
-		reference = "https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2018/march/apt15-is-alive-and-strong-an-analysis-of-royalcli-and-royaldns/"
-   	strings:
-		$ = "%s&%s&%s&%s"  wide ascii
-		$ = "%s\\%s"  wide ascii
-		$ = "WarOnPostRedirect"  wide ascii fullword
-		$ = "WarnonZoneCrossing"  wide ascii fullword
-		$ = "^^^^^" wide ascii fullword
-			/*
-				"%s" /C "%s > "%s\tmp.txt" 2>&1 "     
-			*/
-		$ =  /"?%s\s*"?\s*\/C\s*"?%s\s*>\s*\\?"?%s\\(\w+\.\w+)?"\s*2>&1\s*"?/ 
-		$ ="IEharden" wide ascii fullword
-		$ ="DEPOff" wide ascii fullword
-		$ ="ShownVerifyBalloon" wide ascii fullword
-		$ ="IEHardenIENoWarn" wide ascii fullword
-   	condition:
-		(uint16(0) == 0x5A4D and 5 of them) or 
-		( uint16(0) == 0x5A4D and 3 of them and 
-		( pe.imports("advapi32.dll", "CryptDecrypt") and pe.imports("advapi32.dll", "CryptEncrypt") and
-		pe.imports("ole32.dll", "CoCreateInstance")))}
-
 rule malware_apt15_royaldll{
 	meta:
 		author = "David Cannings"
@@ -199,23 +173,6 @@ rule malware_apt15_royaldll{
 		3 of them
 }
 
-rule malware_apt15_royaldll_2	{
-	meta:
-		author	=	"Ahmed Zaki"
-		sha256	=	"bc937f6e958b339f6925023bc2af375d669084e9551fd3753e501ef26e36b39d"
-		description	=	"DNS backdoor used by APT15"
-		reference = "https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2018/march/apt15-is-alive-and-strong-an-analysis-of-royalcli-and-royaldns/"
-	strings:
-		    $= "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Svchost" wide ascii 
-		    $= "netsvcs" wide ascii fullword
-		    $= "%SystemRoot%\\System32\\svchost.exe -k netsvcs" wide ascii fullword
-		    $= "SYSTEM\\CurrentControlSet\\Services\\" wide ascii
-		    $= "myWObject" wide ascii 
-	condition:
-		uint16(0) == 0x5A4D and all of them
-		and pe.exports("ServiceMain")
-		and filesize > 50KB and filesize < 600KB
-}
 
 rule malware_apt15_exchange_tool {
 	meta:
