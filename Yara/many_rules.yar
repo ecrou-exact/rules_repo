@@ -1,3 +1,12 @@
+rule test {
+	condition:
+	1
+}
+
+rule tete{
+	conditi
+}
+
 rule Detect_lumma_stealer: lumma
 {
     meta:
