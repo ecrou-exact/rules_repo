@@ -3,6 +3,65 @@ rule test {
 	1
 }
 
+rule CVE_Example
+{
+    meta:
+        description = "Detects vulnerability CVE-2023-12345 in logs"
+    strings:
+        $cve = "CVE-2023-12345"
+    condition:
+        $cve
+}
+rule PYSEC_Example
+{
+    meta:
+        description = "Python dependency vulnerable: PYSEC-2022-00123"
+    strings:
+        $pysec = "PYSEC-2022-00123"
+    condition:
+        $pysec
+}
+rule RHSA_Example
+{
+    meta:
+        description = "RedHat advisory RHSA-2023:0456 detected"
+    strings:
+        $rhsa = "RHSA-2023:0456"
+    condition:
+        $rhsa
+}
+rule Multiple_Vulns
+{
+    meta:
+        description = "Detects CVE-2021-34567 and GHSA-xy12-zw34-ab56"
+    strings:
+        $cve = "CVE-2021-34567"
+        $ghsa = "GHSA-xy12-zw34-ab56"
+    condition:
+        $cve or $ghsa
+}
+
+rule Cisco_Example
+{
+    meta:
+        description = "Cisco security advisory cisco-sa-20231101-XYZ"
+    strings:
+        $cisco = "cisco-sa-20231101-XYZ"
+    condition:
+        $cisco
+}
+
+rule GHSA_Example
+{
+    meta:
+        description = "This software is affected by GHSA-ab12-cd34-ef56"
+    strings:
+        $ghsa = "GHSA-ab12-cd34-ef56"
+    condition:
+        $ghsa
+}
+
+
 rule tete{
 	conditi
 }
