@@ -1,7 +1,4 @@
-rule teste {
-	condition:
-	1
-}
+
 
 rule CVE_Example
 {
