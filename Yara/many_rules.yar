@@ -1,4 +1,4 @@
-rule test {
+rule teste {
 	condition:
 	1
 }
@@ -62,9 +62,7 @@ rule GHSA_Example
 }
 
 
-rule tete{
-	conditi
-}
+
 
 rule Detect_lumma_stealer: lumma
 {
@@ -79,7 +77,7 @@ rule Detect_lumma_stealer: lumma
         hash = "9b742a890aff9c7a2b54b620fe5e1fcfa553648695d79c892564de09b850c92b"
         hash = "60247d4ddd08204818b60ade4bfc32d6c31756c574a5fe2cd521381385a0f868"
                 
-   
+   strings:
          
         $s1 = "- PC:" ascii 
         $s2 = "- User:" ascii
@@ -264,7 +262,7 @@ rule malware_apt15_exchange_tool {
 		$s13 = "/list" wide
 		$s14 = "/enum" wide
 		$s15 = "/save" wide
-		 = "/ao" wide
+		$s16 = "/ao" wide
 		$s17 = "/sl" wide
 		$s18 = "/v or /t is null" wide
 		$s19 = "2007" wide
