@@ -1,6 +1,5 @@
 rule teste {
-	condiiton:
-1
+	condition:
 }
 
 rule totot{
