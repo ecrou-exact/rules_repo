@@ -1,8 +1,3 @@
-rule teste {
-	condition:
-	1
-}
-
 rule CVE_Example
 {
     meta:
@@ -81,7 +76,6 @@ rule Detect_lumma_stealer: lumma
          
         $s1 = "- PC:" ascii 
         $s2 = "- User:" ascii
-        $s3 =
         $s4 = "- Language:" ascii
         
         $op = {0B C8 69 F6 [4] 0F B6 47 ?? C1 E1 ?? 0B C8 0F B6 07 C1 E1 ?? 83 C7 ?? 0B C8 69 C9 [4] 8B C1 C1 E8 ?? 33 C1 69 C8 [4] 33 F1}
