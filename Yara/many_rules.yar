@@ -1,3 +1,13 @@
+rule teste {
+	condiiton:
+1
+}
+
+rule totot{
+	condition:
+	1
+}
+
 rule CVE_Example
 {
     meta:
