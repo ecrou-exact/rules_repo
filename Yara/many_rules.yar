@@ -2,7 +2,20 @@ rule teste {
 	condition:
 }
 
-rule totot{
+
+rule JEsuisCool {
+	meta:
+		license: "EEE"
+	condition:
+		1
+}
+
+rule teste {
+	condition : 
+	1
+}
+
+rule totot {
 	condition:
 	1
 }
