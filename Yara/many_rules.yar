@@ -1,4 +1,24 @@
+rule teste {
+	condition:
+}
 
+
+rule JEsuisCool {
+	meta:
+		license: "EEE"
+	condition:
+		1
+}
+
+rule teste {
+	condition : 
+	1
+}
+
+rule totot {
+	condition:
+	1
+}
 
 rule CVE_Example
 {
