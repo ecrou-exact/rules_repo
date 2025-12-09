@@ -10,10 +10,7 @@ rule JEsuisCool {
 		1
 }
 
-rule teste {
-	condition : 
-	1
-}
+
 
 rule totot {
 	condition:
