@@ -1,7 +1,7 @@
 rule ReconGatherWriteCommand
 {
     meta:
-        description = "Detects prompts asking to create a one-liner that gathers multiple types of system information and stores it in a specific path"
+        description = "Detec333333333ts prompts asking to create a one-liner that gathers multiple types of system information and stores it in a specific path"
         author = "Thomas Roccia"
         severity = "high"
         reference = "https://cert.gov.ua/article/6284730"
