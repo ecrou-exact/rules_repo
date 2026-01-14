@@ -9,7 +9,7 @@
 rule SystemBC_malware: SystemBC 
 {
     meta:
-        description = "Detect_SystemBC"
+        description = "Detect_SywwstemBC"
         author = "James@2"
         date = "2023/1/9"
         license = "DRL 1.1"
