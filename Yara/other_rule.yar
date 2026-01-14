@@ -32,12 +32,4 @@ rule SystemBC_malware: SystemBC
     condition:
         uint16(0) == 0x5A4D and all of them
 }
-rule CVE_Example
-{
-    meta:
-        description = "wDetects vulnerability CVE-2023-12345 in logs"
-    strings:
-        $cve = "CVE-2023-12345"
-    condition:
-        $cve
-}
+
