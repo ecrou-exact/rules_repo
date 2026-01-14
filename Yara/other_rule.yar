@@ -1,7 +1,7 @@
 rule SystemBC_malware: SystemBC 
 {
     meta:
-        description = "Deteeeect_SystemBC"
+        description = "Detect_SystemBC"
         author = "James@2"
         date = "2023/1/9"
         license = "DRL 1.1"
