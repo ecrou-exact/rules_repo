@@ -39,13 +39,14 @@ rule eee{
 }
 
 
-rule SystemBC_malware: SystemBC 
+rule SystemBC_malwaree: SystemBC 
 {
     meta:
         description = "Detect_SystemBC"
         author = "James@2"
         date = "2023/1/9"
         license = "DRL 1.1"
+        uuid= "was34qwsad43qewafsd"
         hash = "21adaf466ea988688d3e107a0f95237817189bce0b4f05d232f9d30b97bf68d4"
     strings:
 	    $s1 = "GET /tor/rendezvous2/%s HTTP" ascii
