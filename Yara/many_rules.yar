@@ -16,10 +16,7 @@ rule totot {
 	condition:
 	1
 }
-rule totot {
-	condition:
-	2
-}
+
 
 rule CVE_Example
 {
