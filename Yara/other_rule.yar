@@ -33,3 +33,27 @@ rule SystemBC_malware: SystemBC
         uint16(0) == 0x5A4D and all of them
 }
 
+rule eee{
+
+    contiom
+}
+
+
+rule SystemBC_malware: SystemBC 
+{
+    meta:
+        description = "Detect_SystemBC"
+        author = "James@2"
+        date = "2023/1/9"
+        license = "DRL 1.1"
+        hash = "21adaf466ea988688d3e107a0f95237817189bce0b4f05d232f9d30b97bf68d4"
+    strings:
+	    $s1 = "GET /tor/rendezvous2/%s HTTP" ascii
+        $s2 = "https://api.ipify.org/"
+        $s3 = "https://ip4.seeip.org/"
+        $s4 = "directory-footer"
+        $s5 = "KEY-----"
+        $op1 = {8A 94 2B [4] 02 C2 8A 8C 28 [4] 88 8C 2B [4] 88 94 28 [4] 02 CA 8A 8C 29 [4] 30 0E 48 FF C6 48 FF CF}
+    condition:
+        uint16(0) == 0x5A4D and all of them
+}
