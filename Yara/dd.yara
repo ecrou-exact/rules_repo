@@ -16,7 +16,7 @@ rule SystemBC_malware: SystemBC
         hash = "b369ed704c293b76452ee1bdd99a69bbb76b393a4a9d404e0b5df59a00cff074"
         hash = "0da6157c9b27d5a07ce34f32f899074dd5b06891d5323fbe28d5d34733bbdaf8"
         hash = "70874b6adc30641b33ed83f6321b84d0aef1cf11de2cb78f78c9d3a45c5221c0"
-        uuid = "adsZ7wqDSiweoasooeeds445"
+        
     strings:
 	    $s1 = "GET /tor/rendezvous2/%s HTTP" ascii
         $s2 = "https://api.ipify.org/"
