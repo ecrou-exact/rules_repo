@@ -33,10 +33,7 @@ rule SystemBC_malware: SystemBC
         uint16(0) == 0x5A4D and all of them
 }
 
-rule eee{
 
-    contiom
-}
 
 
 
