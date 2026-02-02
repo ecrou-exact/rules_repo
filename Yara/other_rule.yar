@@ -34,6 +34,14 @@ rule SystemBC_malware: SystemBC
 }
 
 
+rule test{
+	condition:
+3
+}
 
+rule tetetet{
+	condition:
+2
+}
 
 
